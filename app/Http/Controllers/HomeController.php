@@ -7,6 +7,6 @@ class HomeController extends Controller
 {
     public function add()
     {
-        return view('home');
+        return view('top');
     }
 }
