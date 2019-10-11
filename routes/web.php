@@ -15,4 +15,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('top', 'HomeController@add');
+Route::get('top', 'HomeController@browse');
+Route::get('contact', 'HomeController@form');

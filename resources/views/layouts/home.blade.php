@@ -26,7 +26,7 @@
                         <li><a href="#menu">MENU</a></li>
                         <li><a href="#access">ACCESS</a></li>
                         <li><a href="#reservation">ご予約</a></li>
-                        <li><a href="contact.html">お問い合わせ</a></li>
+                        <li><a href="form">お問い合わせ</a></li>
                     </ul>
                 </div>
             </div>
@@ -37,7 +37,7 @@
                     <li><a href="#menu">MENU</a></li>
                     <li><a href="#access">ACCESS</a></li>
                     <li><a href="#reservation">ご予約</a></li>
-                    <li><a href="contact.html">お問い合わせ</a></li>
+                    <li><a href="contact">お問い合わせ</a></li>
                 </ul>
             </div>
         </header>

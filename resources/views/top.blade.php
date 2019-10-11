@@ -1,4 +1,3 @@
-<!DOCTYPE HTML>
 @extends('layouts.home')
 
 @section('title', '内藤美容室')
