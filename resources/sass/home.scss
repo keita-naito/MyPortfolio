@@ -398,6 +398,8 @@ li a {
     text-align: left;
     border-bottom: 1px solid #9D8468;
     padding-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
     /*margin-right: 200px;*/
 }
 
@@ -408,6 +410,7 @@ li a {
 label {
     display: block;
     margin-bottom: 10px;
+    font-size: 25px
 }
 
 .box {
@@ -419,9 +422,8 @@ label {
 }
 
 input {
-    margin-right: 10px;
+    margin-bottom: 38px;
     height: 36px;
-    vertical-align: middle;
 }
 
 textarea{
@@ -686,5 +688,15 @@ input::placeholder {
     
     .copy-right {
         padding: 10px;
+    }
+    
+    /*お問い合わせ*/
+    
+    .contact-form {
+        padding: 100px 5% 50px;
+    }
+    
+    .mail, textarea{
+        width: 340px;
     }
 }
