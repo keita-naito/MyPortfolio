@@ -16,4 +16,7 @@ Route::get('/', function () {
 });
 
 Route::get('top', 'HomeController@browse');
-Route::get('contact', 'HomeController@form');
+
+Route::get('contact/form', 'ContactController@form')->name('contact.index');
+Route::post('contact/confirm', 'ContactController@confirm')->name('contact.confirm');
+Route::post('contact/sent', 'ContactController@finish')->name('contact.finish');;
