@@ -14,7 +14,7 @@
     <body>
         <header>
             <div class="header-logo">
-                <a href="top">keita-naito</a>
+                <a href="/">keita-naito</a>
             </div>
             
             <!--ドロップダウンメニュー-->

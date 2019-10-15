@@ -437,6 +437,31 @@ input::placeholder {
     font-size: 12px;
 }
 
+.error-message {
+    color: #ff0000;    
+}
+
+// 問い合わせ確認画面
+
+.confirm {
+    background-color: #eeeeee;
+    padding: 5% 5% 1% 5%;
+    margin-bottom: 35px;    
+}
+
+.confirm-message {
+    margin-bottom: 55px;
+}
+
+.correction {
+    background-color: #fff;
+    color: #000;
+}
+
+.submit {
+    margin-left: 60px;
+}
+
 /*タブレット対応*/
 
 @media(max-width: 960px) {

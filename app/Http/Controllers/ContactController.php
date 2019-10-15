@@ -11,7 +11,7 @@ class ContactController extends Controller
         return view('contact/form');
     }
     
-    public function confirm()
+    public function confirm(Request $request)
     {
         // バリデーションを実行、結果に問題があったら中断してエラーを返す
         $request->validate([
