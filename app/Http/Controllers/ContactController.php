@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\ContactSendmail;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class ContactController extends Controller
 {
@@ -30,8 +32,15 @@ class ContactController extends Controller
         ]);
     }
     
-    public function finish()
+    public function finish(Request $request)
     {
+        $inputs = $request->all();
+        
+        Mail::to('atiek.nn.xx@gmail.com')->send(new ContactSendmail($inputs));
+        
+        // 二重送信防止の為トークンを再生成
+        $request->session()->regenerateToken();
+        
         return view('contact/sent');
     }
 }

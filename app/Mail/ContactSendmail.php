@@ -11,10 +11,10 @@ class ContactSendmail extends Mailable
 {
     use Queueable, SerializesModels;
     
-    private $name;
-    private $tel;
-    private $email;
-    private $body;
+    public $name;
+    public $tel;
+    public $email;
+    public $body;
     /**
      * Create a new message instance.
      *
@@ -38,7 +38,7 @@ class ContactSendmail extends Mailable
     public function build()
     {
         return $this
-            ->from('example@gmail.com')
+            ->from('atiek.nn.xx@gmail.com')
             ->subject('自動送信メール')
             ->view('contact.mail')
             ->with([

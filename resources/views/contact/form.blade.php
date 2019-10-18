@@ -3,11 +3,11 @@
 @section('title', 'お問い合わせフォーム')
 
 @section('content')
-    <form action="{{ action('ContactController@confirm') }}" method="post">
-        @csrf
+    <div class="contact-form">
+        <h3 class="contact-title">お問い合わせ</h3>
         
-        <div class="contact-form">
-            <h3 class="contact-title">お問い合わせ</h3>
+        <form action="{{ action('ContactController@confirm') }}" method="post">
+            @csrf
             
             <label for="name" class="contact-text">お名前</label>
              @if ($errors->has('name'))
@@ -38,9 +38,7 @@
             @endif
             <textarea id="body" name="body" value="{{ old('body') }}"></textarea>
             
-            
-            
             <button type="submit" name="form" value="send">確認画面へ</button>
-        </div>
-    </form>
+        </form>
+    </div>
 @endsection

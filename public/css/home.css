@@ -496,6 +496,18 @@ input::placeholder {
     margin-left: 60px;
 }
 
+/*問い合わせ完了*/
+
+.finish {
+    font-size: 20px;
+    height: 150px;
+    line-height: 1.5;
+}
+
+.after-sent {
+    color: #fff;    
+}
+
 /*タブレット対応*/
 
 @media (max-width: 960px) {

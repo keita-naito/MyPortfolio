@@ -3,12 +3,11 @@
 @section('title', 'お問い合わせ確認画面')
 
 @section('content')
+    <div class="contact-form">
+        <h3 class="contact-title">お問い合わせ内容の確認</h3>
 
-    <form action="{{ action('ContactController@finish') }}" method="post">
-        @csrf
-    
-        <div class="contact-form">
-            <h3 class="contact-title">お問い合わせ内容の確認</h3>
+        <form action="{{ action('ContactController@finish') }}" method="post">
+            @csrf
             
             <div class="confirm">
                 <label for="name" class="contact-text">お名前</label>
@@ -31,8 +30,8 @@
                 <p class="confirm-message"> {{ $inputs['body'] }} </p>
             </div>
             
-            <button class="correction" type="submit" name="form" value="back">入力内容修正</button>
-            <button class="submit" type="submit" name="form" value="send">送信する</button>
-        </div>
-    </form>
+            <button class="correction" type="button" onclick="history.back(-1)">入力内容修正</button>
+            <button class="submit" type="submit">送信する</button>
+        </form>
+    </div>
 @endsection

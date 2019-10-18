@@ -13,6 +13,6 @@
 
 Route::get('/', 'HomeController@browse');
 
-Route::get('contact/form', 'ContactController@form')->name('contact.form');
+Route::get('contact', 'ContactController@form')->name('contact.form');
 Route::post('contact/confirm', 'ContactController@confirm')->name('contact.confirm');
 Route::post('contact/sent', 'ContactController@finish')->name('contact.finish');;
