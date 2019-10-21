@@ -9,6 +9,6 @@
         <p class="finish">お問い合わせありがとうございました。<br>
         内容を確認のうえ、回答させて頂きます。<br>
         しばらくお待ちください。</p>
-        <button type="button"><a class="after-sent" href="/">TOPへ戻る<a/></button>
+        <button type="button" onclick="location.href='/'">TOPへ戻る</button>
     </div>
 @endsection

@@ -36,11 +36,10 @@
         <div class="reservation-section">
             <h2><a id="reservation">ご予約</a></h2>
             <h3>WEB予約</h3>
-            <button type="button" onclick="location.href='#'">WEBで予約する</button>
+            <button type="button" onclick="location.href='reservation'">WEBで予約する</button>
             <h3>電話予約</h3>
-            <a href="tel:03-1234-5678">
-                <button type="button">03-1234-5678</button>
-            </a>
+            <button type="button" onclick="location.href='tel:03-1234-5678'">03-1234-5678</button>
+        
             <p>
                 ※当日のご予約はお電話でのみ承ります。
                 <br>（受付時間：9:00 - 17:00）

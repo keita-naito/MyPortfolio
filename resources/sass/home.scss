@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=BioRhyme+Expanded');
 
+// 共通
+
+
 * {
  box-sizing: border-box;   
 }
@@ -61,6 +64,20 @@ hr {
     margin-bottom: 20px;
     border: 0;
     border-top: 1px solid #eee;
+}
+
+button {
+    border-radius: 8px;
+    background-color: #007FEB;
+    color: #fff;
+    padding: 15px 0px;
+    cursor: pointer;
+    width: 200px;
+}
+
+button:hover {
+    background-color: #eeeeee;
+    color: #060606;
 }
 
 /*ヘッダー*/
@@ -240,20 +257,6 @@ header a {
     text-align: center;
 }
 
-button {
-    border-radius: 8px;
-    background-color: #007FEB;
-    color: #fff;
-    padding: 15px 0px;
-    cursor: pointer;
-    width: 200px;
-}
-
-button:hover {
-    background-color: #eeeeee;
-    color: #060606;
-}
-
 .reservation-section p {
     font-size: 16px;
     padding-left: 22%;
@@ -383,6 +386,12 @@ li a {
     padding-left: 80px;
 }
 
+// 予約画面
+
+.calendar {
+    padding: 100px;
+}
+
 /*お問い合わせページ*/
 
 .contact-form {
@@ -470,13 +479,14 @@ input::placeholder {
     line-height: 1.5;
 }
 
-.after-sent {
-    color: #fff;    
-}
-
 /*タブレット対応*/
 
 @media(max-width: 960px) {
+    
+    
+    .header-list li {
+        margin: 0 3% 0 4%;
+    }
     
     /*ニュース*/
     
@@ -537,6 +547,12 @@ input::placeholder {
     .outer {
         border: none;
     }
+    
+    // 問い合わせ
+    
+    .contact-form {
+    padding: 100px 10% 50px;
+    }
         
 }
 
@@ -572,7 +588,7 @@ input::placeholder {
     }
     
     #nav-content a {
-        padding: 12px;
+        padding: 18px 0 18px 28px;
         display: block;
 }
 
@@ -725,11 +741,24 @@ input::placeholder {
     
     /*お問い合わせ*/
     
-    .contact-form {
-        padding: 100px 5% 50px;
+    .contact-title {
+        font-size: 26px;
     }
     
     .mail, textarea{
-        width: 340px;
+        width: 330px;
+    }
+    
+    // 問い合わせ確認ページ
+    
+    .submit {
+        margin-left: 0;
+        margin-top: 40px;
+    }
+    
+    // 問い合わせ完了ページ
+    
+    .finish {
+        font-size: 15px;
     }
 }
