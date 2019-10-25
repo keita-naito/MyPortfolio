@@ -3,9 +3,11 @@
 @section('title', '予約画面')
 
 @section('content')
-    <div class="calendar">
+    <div class="reservation-page">
         <h2>予約画面</h2>
-        <iframe src="https://calendar.google.com/calendar/b/1/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=Asia%2FTokyo&amp;src=OHQ2cm1ubDMzZmw3azNuNzJyZzUydWlsaWdAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%238E24AA&amp;showTz=0&amp;showCalendars=0&amp;showTabs=0&amp;showPrint=0&amp;mode=WEEK" style="border-width:0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
+        <div class="reservation-wrapper">
+            <iframe class ="reservation-form" src="https://docs.google.com/forms/d/e/1FAIpQLScxyCeugVzDQPEIQABOUVIOG09-uVFBjZf50rqlaW7M9FB88A/viewform?embedded=true" width="50%" height="600" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe>
+            <iframe src="https://calendar.google.com/calendar/embed?src=etl9g7pdqok7ujkc4v3g35l8co%40group.calendar.google.com&ctz=Asia%2FTokyo" style="border: 0" width="50%" height="600" frameborder="0" scrolling="no"></iframe>
+        </div>
     </div>
-    
 @endsection

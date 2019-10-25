@@ -388,8 +388,12 @@ li a {
 
 // 予約画面
 
-.calendar {
-    padding: 100px;
+.reservation-page {
+    padding: 5%;
+}
+
+.reservation-wrapper {
+    display: flex;
 }
 
 /*お問い合わせページ*/
@@ -546,6 +550,20 @@ input::placeholder {
     
     .outer {
         border: none;
+    }
+    
+      // 予約画面
+    
+    .reservation-wrapper {
+        flex-wrap: wrap;
+    }
+    
+    .reservation-wrapper iframe {
+        width: 100%;
+    }
+    
+    .reservation-form {
+        height: 1300px;
     }
     
     // 問い合わせ
@@ -737,6 +755,12 @@ input::placeholder {
     
     .copy-right {
         padding: 10px;
+    }
+    
+    // 予約画面
+    
+    .reservation-page {
+        padding: 5% 0;
     }
     
     /*お問い合わせ*/
