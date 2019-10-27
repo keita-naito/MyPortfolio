@@ -3,26 +3,27 @@
 @section('title', '内藤美容室')
 
 @section('content')
-    <img class="main-image" src="public/image/main.jpg" alt="メイン画像" >
+    <img class="main-mobile-image" src="image/main_mobile_image.jpg" alt="スマホ用メイン画像">
+    <img class="main-image" src="image/main.jpg" alt="メイン画像">
     <div class="news-wrapper">
         <h2><a id="news">NEWS</a></h2>
         <div class="news-contents">
             <div class="news-content">
-                <img src="image/IMG_サンプル.jpg">
+                <img src="image/news1.jpg" alt="ニュース画像">
                 <h3>NEWS TITLE</h3>
                 <p>2019.9.28</p>
                 <hr>
                 <p>記事の内容、記事の内容、記事の内容、記事の内容、記事の内容、記事の内容、記事の内容、記事の内容、</p>
             </div>
             <div class="news-content">
-                <img src="image/IMG_サンプル.jpg">
+                <img src="image/news2.jpg" alt="ニュース画像">
                 <h3>NEWS TITLE</h3>
                 <p>2019.9.28</p>
                 <hr>
                 <p>記事の内容、記事の内容、記事の内容、記事の内容、記事の内容、記事の内容、記事の内容、記事の内容、</p>
             </div>
             <div class="news-content">
-                <img src="image/IMG_サンプル.jpg">
+                <img src="image/news3.jpg" alt="ニュース画像">
                 <h3>NEWS TITLE</h3>
                 <p>2019.9.28</p>
                 <hr>
@@ -32,7 +33,7 @@
     </div>
     
     <div class="reservation">
-        <img src="image/59cbc9be42454dd47ebe13c448683a1d.jpg">
+        <img src="image/reservate_image.jpg" alt="予約画像">
         <div class="reservation-section">
             <h2><a id="reservation">ご予約</a></h2>
             <h3>WEB予約</h3>
@@ -91,7 +92,7 @@
     
     <div class="stylist-section">
         <div class="icon">
-            <img src="image/IMG_6108.正方形.jpg">
+            <img src="image/IMG_6108.正方形.jpg" alt="スタッフ画像">
         </div>
         <div class="side-text">
             <h2>STAFF</h2>

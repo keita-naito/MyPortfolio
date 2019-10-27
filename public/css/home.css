@@ -214,6 +214,10 @@ header a {
 
 /*メイン画像*/
 
+.main-mobile-image {
+  display: none;
+}
+
 .main-image {
   width: 100%;
   height: auto;
@@ -604,6 +608,15 @@ input::placeholder {
 
   button {
     width: 250px;
+  }
+
+  .main-mobile-image {
+    display: block;
+    width: 100%;
+  }
+
+  .main-image {
+    display: none;
   }
 
   /*ヘッダー*/
