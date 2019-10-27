@@ -5,16 +5,16 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>@yield('title')</title>
-        <script src="{{asset('js/app.js') }}" defer></script>
-        <link href="{{asset('css/normalize.css') }}" rel="stylesheet">
-        <link href="{{asset('css/home.css') }}" rel="stylesheet">
+        <script src="{{ asset('js/app.js') }}" defer></script>
+        <link href="{{ asset('css/normalize.css') }}" rel="stylesheet">
+        <link href="{{ asset('css/home.css') }}" rel="stylesheet">
         <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css">
     </head>
     
     <body>
         <header>
             <div class="header-logo">
-                <a href="/">keita-naito</a>
+                <a href="/">内藤美容室</a>
             </div>
             
             <!--ドロップダウンメニュー-->
@@ -24,10 +24,10 @@
                 <label class="nav-unshown" id="nav-close" for="nav-input"></label>
                 <div id="nav-content">
                     <ul>
-                        <li><a href="#news">NEWS</a></li>
-                        <li><a href="#menu">MENU</a></li>
-                        <li><a href="#access">ACCESS</a></li>
-                        <li><a href="#reservation">ご予約</a></li>
+                        <li><a href="/#news">NEWS</a></li>
+                        <li><a href="/#menu">MENU</a></li>
+                        <li><a href="/#access">ACCESS</a></li>
+                        <li><a href="/#reservation">ご予約</a></li>
                         <li><a href="contact">お問い合わせ</a></li>
                     </ul>
                 </div>
@@ -35,10 +35,10 @@
             
             <div class="header-list">
                 <ul>
-                    <li><a href="#news">NEWS</a></li>
-                    <li><a href="#menu">MENU</a></li>
-                    <li><a href="#access">ACCESS</a></li>
-                    <li><a href="#reservation">ご予約</a></li>
+                    <li><a href="/#news">NEWS</a></li>
+                    <li><a href="/#menu">MENU</a></li>
+                    <li><a href="/#access">ACCESS</a></li>
+                    <li><a href="/#reservation">ご予約</a></li>
                     <li><a href="contact">お問い合わせ</a></li>
                 </ul>
             </div>

@@ -3,26 +3,26 @@
 @section('title', '内藤美容室')
 
 @section('content')
-    <img class="main-image" src="image/59cbc9be42454dd47ebe13c448683a1d.jpg">
+    <img class="main-image" src="image/トップ画面.jpg" alt="メイン画像" >
     <div class="news-wrapper">
         <h2><a id="news">NEWS</a></h2>
         <div class="news-contents">
             <div class="news-content">
-                <img src="image/eaba6fdeaa2eafac64347b82a7b6d121.jpg">
+                <img src="image/IMG_サンプル.jpg">
                 <h3>NEWS TITLE</h3>
                 <p>2019.9.28</p>
                 <hr>
                 <p>記事の内容、記事の内容、記事の内容、記事の内容、記事の内容、記事の内容、記事の内容、記事の内容、</p>
             </div>
             <div class="news-content">
-                <img src="image/eaba6fdeaa2eafac64347b82a7b6d121.jpg">
+                <img src="image/IMG_サンプル.jpg">
                 <h3>NEWS TITLE</h3>
                 <p>2019.9.28</p>
                 <hr>
                 <p>記事の内容、記事の内容、記事の内容、記事の内容、記事の内容、記事の内容、記事の内容、記事の内容、</p>
             </div>
             <div class="news-content">
-                <img src="image/eaba6fdeaa2eafac64347b82a7b6d121.jpg">
+                <img src="image/IMG_サンプル.jpg">
                 <h3>NEWS TITLE</h3>
                 <p>2019.9.28</p>
                 <hr>
