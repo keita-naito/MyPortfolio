@@ -3,7 +3,7 @@
 @section('title', '内藤美容室')
 
 @section('content')
-    <img class="main-image" src="image/トップ画面.jpg" alt="メイン画像" >
+    <img class="main-image" src="public/image/main.jpg" alt="メイン画像" >
     <div class="news-wrapper">
         <h2><a id="news">NEWS</a></h2>
         <div class="news-contents">
@@ -91,7 +91,7 @@
     
     <div class="stylist-section">
         <div class="icon">
-            <img src="image/59cbc9be42454dd47ebe13c448683a1d.jpg">
+            <img src="image/IMG_6108.正方形.jpg">
         </div>
         <div class="side-text">
             <h2>STAFF</h2>
