@@ -91,7 +91,7 @@
     
     <div class="stylist-section">
         <div class="icon">
-            <img src="image/IMG_6108.正方形.jpg">
+            <img src="image/59cbc9be42454dd47ebe13c448683a1d.jpg">
         </div>
         <div class="side-text">
             <h2>STAFF</h2>
