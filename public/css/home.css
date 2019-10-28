@@ -384,15 +384,15 @@ li a {
   margin-bottom: 20px;
 }
 
-.nav-title {
-  border-bottom: 1px dotted #fff;
-  margin-bottom: 20px;
-}
-
 .list-navbar button {
   border-radius: 0px;
   border: none;
   width: 100%;
+}
+
+.nav-title {
+  border-bottom: 1px dotted #fff;
+  margin-bottom: 20px;
 }
 
 .outer {
@@ -452,6 +452,10 @@ input {
   height: 36px;
 }
 
+input:placeholder {
+  font-size: 12px;
+}
+
 textarea {
   width: 500px;
   height: 100px;
@@ -461,26 +465,6 @@ textarea {
 
 .contact-form h4 {
   margin-bottom: 20px;
-}
-
-input::-webkit-input-placeholder {
-  font-size: 12px;
-}
-
-input::-moz-placeholder {
-  font-size: 12px;
-}
-
-input:-ms-input-placeholder {
-  font-size: 12px;
-}
-
-input::-ms-input-placeholder {
-  font-size: 12px;
-}
-
-input::placeholder {
-  font-size: 12px;
 }
 
 .error-message {
