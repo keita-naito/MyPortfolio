@@ -577,14 +577,16 @@ textarea{
     
     .reservation-wrapper {
         flex-wrap: wrap;
-        
-        iframe {
-            width: 100%;
-        }
+        display: block;
+        text-align: center;
     }
     
+    .reservation-calendar {
+        width: 90%;
+    }
     
     .reservation-form {
+        width: 100%;
         height: 1300px;
     }
     
