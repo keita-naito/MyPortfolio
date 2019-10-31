@@ -43,7 +43,6 @@ p {
 
 a {
     text-decoration: none;
-    /*display: inline-block;*/
 }
 
 ul {
@@ -80,7 +79,7 @@ button {
     }
 }
 
-/*ヘッダー*/
+// ヘッダー
 
 header {
     background-color: #060606;
@@ -121,18 +120,18 @@ header {
 
 
 
-/*ハンバーガーメニュー*/
+// ハンバーガーメニュー
 
 #nav-drawer {
     position: relative;
 }
 
-/*チェックボックス等は非表示に*/
+// チェックボックス等は非表示に
 .nav-unshown {
     display:none;
 }
 
-/*アイコンのスペース*/
+// アイコンのスペース
 #nav-open {
     display: inline-block;
     width: 30px;
@@ -142,7 +141,7 @@ header {
     margin: 26px;
 }
 
-/*ハンバーガーアイコンをCSSだけで表現*/
+// ハンバーガーアイコンをCSSだけで表現
 #nav-open span, #nav-open span:before, #nav-open span:after {
     position: absolute;
     height: 3px;/*線の太さ*/
@@ -160,12 +159,12 @@ header {
     bottom: -16px;
 }
 
-/*閉じる用の薄黒カバー*/
+// 閉じる用の薄黒カバー
 #nav-close {
-    display: none;/*はじめは隠しておく*/
+    display: none;//はじめは隠しておく
     position: fixed;
     z-index: 99;
-    top: 0;/*全体に広がるように*/
+    top: 0;
     left: 0;
     width: 100%;
     height: 100%;
@@ -174,25 +173,25 @@ header {
     transition: .3s ease-in-out;
 }
 
-/*中身*/
+// 中身
 #nav-content {
     overflow: auto;
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 9999;/*最前面に*/
+    z-index: 9999;//最前面に
     width: 100%;
-    /*max-width: 330px;*/
+    // max-width: 330px;
     height: auto;
     background: #060606;
-    transition: .5s ease-in-out;/*滑らかに表示*/
-    /*-webkit-transform: translateY(-105%); ベンダープレフィックス　今は使わない？*/
-    transform: translateY(-105%);/*上に隠しておく*/
+    transition: .5s ease-in-out;//滑らかに表示
+    // -webkit-transform: translateY(-105%); ベンダープレフィックス　今は使わない？
+    transform: translateY(-105%);//上に隠しておく
 }
 
-/*チェックが入ったらもろもろ表示*/
+//チェックが入ったらもろもろ表示
 #nav-input:checked ~ #nav-close {
-    display: block;/*カバーを表示*/
+    display: block;//カバーを表示
     opacity: .5;
 }
 
@@ -204,7 +203,7 @@ header {
     display: none;
 }
 
-/*メイン画像*/
+// メイン画像
 
 .main-mobile-image {
     display: none;
@@ -215,7 +214,7 @@ header {
     height: auto;
 }
 
-/*ニュース*/
+// ニュース
 
 .news-wrapper {
     height: 800px;
@@ -228,7 +227,7 @@ header {
 
 .news-content {
     background-color: #fff;
-    /*width: calc(94% / 3);*/
+    // width: calc(94% / 3);
     margin: 0 1%;
     padding: 10px;
     
@@ -250,7 +249,7 @@ header {
 
 
 
-/*予約*/
+// 予約
 
 .reservation {
     height: 700px;
@@ -279,7 +278,7 @@ header {
 }
 
 
-/*アクセス*/
+// アクセス
 
 .access-section {
     height: 640px;
@@ -307,7 +306,7 @@ header {
     padding: 0 16%;
 }
 
-/*メニュー*/
+// メニュー
 
 .menu-section {
     text-align: center;
@@ -329,10 +328,10 @@ td {
     margin-bottom: 60px;
 }
 
-/*スタッフ紹介*/
+// スタッフ紹介
 
 .stylist-section{
-    /*height: 560px;*/
+    // height: 560px;
     background-color: #fff;
     display: flex;
     justify-content: space-around;
@@ -354,13 +353,13 @@ td {
 .side-text p {
     text-align: left;
 }
-/*フッター部分*/
+// フッター部分
 
 footer {
     height: 350px;
     background-color: #343434;
     color: #fff;
-    width: 100%;
+    width: 100;
 }
 .footer-area {
     height: 280px;
@@ -416,7 +415,7 @@ li a {
     display: flex;
 }
 
-/*お問い合わせページ*/
+// お問い合わせページ
 
 .contact-form {
     padding: 100px 15% 50px;
@@ -429,7 +428,7 @@ li a {
     padding-bottom: 20px;
     margin-top: 10px;
     margin-bottom: 20px;
-    /*margin-right: 200px;*/
+    // margin-right: 200px;
 }
 
 .contact-text {
@@ -496,7 +495,7 @@ textarea{
     margin-left: 60px;
 }
 
-/*問い合わせ完了*/
+// 問い合わせ完了
 
 .finish {
     font-size: 20px;
@@ -504,7 +503,7 @@ textarea{
     line-height: 1.5;
 }
 
-/*タブレット対応*/
+// タブレット対応
 
 @media(max-width: 960px) {
     
@@ -513,7 +512,7 @@ textarea{
         margin: 0 3% 0 4%;
     }
     
-    /*ニュース*/
+    // ニュース
     
     .news-wrapper {
         height: auto;    
@@ -529,7 +528,7 @@ textarea{
         width: 48%;
     }
     
-    /*予約*/
+    // 予約
     
     .reservation {
         height: auto;
@@ -545,7 +544,7 @@ textarea{
         
     }
     
-    /*スタッフ*/
+    // スタッフ
     
     .icon img {
         width: 250px;
@@ -556,7 +555,7 @@ textarea{
         width: 48%;
     }
     
-    /*フッター*/
+    // フッター
     footer {
         height: auto;
     }
@@ -599,7 +598,7 @@ textarea{
         
 }
 
-/*モバイル対応*/
+// モバイル対応
 
 @media(max-width: 590px) {
     
@@ -624,7 +623,7 @@ textarea{
         display: none;
     }
     
-    /*ヘッダー*/
+    // ヘッダー
     
     .header-list li {
         display: none;
@@ -645,7 +644,7 @@ textarea{
 }
 
     
-    /*ニュース*/
+    // ニュース
     
     .news-wrapper {
         height: auto;
@@ -669,7 +668,7 @@ textarea{
         margin-bottom: 30px;
     }
     
-    /*予約*/
+    // 予約
     
     .reservation {
         height: auto;
@@ -692,7 +691,7 @@ textarea{
     }
     
     
-    /*アクセス*/
+    // アクセス
     
     .access-section {
         height: auto;
@@ -720,7 +719,7 @@ textarea{
         margin: 0;
     }
     
-    /*メニュー*/
+    // メニュー
     
     .menu-section {
         padding: 20px;   
@@ -736,7 +735,7 @@ textarea{
         padding: 40px 15px;
     }
     
-    /*スタッフ*/
+    // スタッフ
     
     .stylist-section {
         height: auto;
@@ -760,7 +759,7 @@ textarea{
         width: auto;
     }
     
-    /*フッター*/
+    // フッター
     
     footer {
         height: auto;
@@ -800,7 +799,7 @@ textarea{
         padding: 5% 0;
     }
     
-    /*お問い合わせ*/
+    // お問い合わせ
     
     .contact-title {
         font-size: 26px;

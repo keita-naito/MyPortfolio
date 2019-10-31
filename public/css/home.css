@@ -40,7 +40,6 @@ p {
 
 a {
   text-decoration: none;
-  /*display: inline-block;*/
 }
 
 ul {
@@ -76,8 +75,6 @@ button:hover {
   color: #060606;
 }
 
-/*ヘッダー*/
-
 header {
   background-color: #060606;
   height: 70px;
@@ -111,19 +108,13 @@ header a {
   font-size: 14px;
 }
 
-/*ハンバーガーメニュー*/
-
 #nav-drawer {
   position: relative;
 }
 
-/*チェックボックス等は非表示に*/
-
 .nav-unshown {
   display: none;
 }
-
-/*アイコンのスペース*/
 
 #nav-open {
   display: inline-block;
@@ -133,8 +124,6 @@ header a {
   float: right;
   margin: 26px;
 }
-
-/*ハンバーガーアイコンをCSSだけで表現*/
 
 #nav-open span,
 #nav-open span:before,
@@ -159,15 +148,11 @@ header a {
   bottom: -16px;
 }
 
-/*閉じる用の薄黒カバー*/
-
 #nav-close {
   display: none;
-  /*はじめは隠しておく*/
   position: fixed;
   z-index: 99;
   top: 0;
-  /*全体に広がるように*/
   left: 0;
   width: 100%;
   height: 100%;
@@ -176,31 +161,21 @@ header a {
   transition: 0.3s ease-in-out;
 }
 
-/*中身*/
-
 #nav-content {
   overflow: auto;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 9999;
-  /*最前面に*/
   width: 100%;
-  /*max-width: 330px;*/
   height: auto;
   background: #060606;
   transition: 0.5s ease-in-out;
-  /*滑らかに表示*/
-  /*-webkit-transform: translateY(-105%); ベンダープレフィックス　今は使わない？*/
   transform: translateY(-105%);
-  /*上に隠しておく*/
 }
-
-/*チェックが入ったらもろもろ表示*/
 
 #nav-input:checked ~ #nav-close {
   display: block;
-  /*カバーを表示*/
   opacity: 0.5;
 }
 
@@ -212,8 +187,6 @@ header a {
   display: none;
 }
 
-/*メイン画像*/
-
 .main-mobile-image {
   display: none;
 }
@@ -222,8 +195,6 @@ header a {
   width: 100%;
   height: auto;
 }
-
-/*ニュース*/
 
 .news-wrapper {
   height: 800px;
@@ -236,7 +207,6 @@ header a {
 
 .news-content {
   background-color: #fff;
-  /*width: calc(94% / 3);*/
   margin: 0 1%;
   padding: 10px;
 }
@@ -254,8 +224,6 @@ header a {
 .news-content p {
   padding: 0 40px;
 }
-
-/*予約*/
 
 .reservation {
   height: 700px;
@@ -282,8 +250,6 @@ header a {
   margin-top: 60px;
 }
 
-/*アクセス*/
-
 .access-section {
   height: 640px;
   background-color: #fff;
@@ -309,8 +275,6 @@ header a {
   padding: 0 16%;
 }
 
-/*メニュー*/
-
 .menu-section {
   text-align: center;
 }
@@ -331,10 +295,7 @@ td {
   margin-bottom: 60px;
 }
 
-/*スタッフ紹介*/
-
 .stylist-section {
-  /*height: 560px;*/
   background-color: #fff;
   display: flex;
   justify-content: space-around;
@@ -356,13 +317,11 @@ td {
   text-align: left;
 }
 
-/*フッター部分*/
-
 footer {
   height: 350px;
   background-color: #343434;
   color: #fff;
-  width: 100%;
+  width: 100;
 }
 
 .footer-area {
@@ -414,8 +373,6 @@ li a {
   display: flex;
 }
 
-/*お問い合わせページ*/
-
 .contact-form {
   padding: 100px 15% 50px;
   background-color: #fff;
@@ -427,7 +384,6 @@ li a {
   padding-bottom: 20px;
   margin-top: 10px;
   margin-bottom: 20px;
-  /*margin-right: 200px;*/
 }
 
 .contact-text {
@@ -491,22 +447,16 @@ textarea {
   margin-left: 60px;
 }
 
-/*問い合わせ完了*/
-
 .finish {
   font-size: 20px;
   height: 150px;
   line-height: 1.5;
 }
 
-/*タブレット対応*/
-
 @media (max-width: 960px) {
   .header-list li {
     margin: 0 3% 0 4%;
   }
-
-  /*ニュース*/
 
   .news-wrapper {
     height: auto;
@@ -522,8 +472,6 @@ textarea {
     width: 48%;
   }
 
-  /*予約*/
-
   .reservation {
     height: auto;
     flex-wrap: wrap;
@@ -533,8 +481,6 @@ textarea {
     height: 500px;
   }
 
-  /*スタッフ*/
-
   .icon img {
     width: 250px;
     height: 250px;
@@ -543,8 +489,6 @@ textarea {
   .side-text {
     width: 48%;
   }
-
-  /*フッター*/
 
   footer {
     height: auto;
@@ -583,8 +527,6 @@ textarea {
   }
 }
 
-/*モバイル対応*/
-
 @media (max-width: 590px) {
   h2 {
     margin-bottom: 30px;
@@ -607,8 +549,6 @@ textarea {
     display: none;
   }
 
-  /*ヘッダー*/
-
   .header-list li {
     display: none;
   }
@@ -626,8 +566,6 @@ textarea {
     padding: 18px 0 18px 28px;
     display: block;
   }
-
-  /*ニュース*/
 
   .news-wrapper {
     height: auto;
@@ -650,8 +588,6 @@ textarea {
     margin-bottom: 30px;
   }
 
-  /*予約*/
-
   .reservation {
     height: auto;
   }
@@ -670,8 +606,6 @@ textarea {
     margin: 24px 3%;
     padding: 0;
   }
-
-  /*アクセス*/
 
   .access-section {
     height: auto;
@@ -699,8 +633,6 @@ textarea {
     margin: 0;
   }
 
-  /*メニュー*/
-
   .menu-section {
     padding: 20px;
   }
@@ -714,8 +646,6 @@ textarea {
   td {
     padding: 40px 15px;
   }
-
-  /*スタッフ*/
 
   .stylist-section {
     height: auto;
@@ -738,8 +668,6 @@ textarea {
     float: none;
     width: auto;
   }
-
-  /*フッター*/
 
   footer {
     height: auto;
@@ -776,8 +704,6 @@ textarea {
   .reservation-page {
     padding: 5% 0;
   }
-
-  /*お問い合わせ*/
 
   .contact-title {
     font-size: 26px;
