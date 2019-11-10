@@ -10,11 +10,24 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('login', 'HomeController@login');
 
 Route::get('/', 'HomeController@browse');
 
-Route::get('contact', 'ContactController@form')->name('contact');
-Route::post('contact/confirm', 'ContactController@confirm')->name('contact.confirm');
-Route::post('contact/sent', 'ContactController@finish')->name('contact.finish');
+Route::group(['prefix' => 'news'], function() {
+    Route::get('create', 'NewsController@add');
+    Route::get('delete', 'NewsController@delete');
+    Route::get('update', 'NewsController@update');
+});
+
+Route::group(['prefix' => 'contact'], function() {
+    Route::get('', 'ContactController@form')->name('contact');
+    Route::post('confirm', 'ContactController@confirm')->name('contact.confirm');
+    Route::post('sent', 'ContactController@finish')->name('contact.finish');
+});
 
 Route::get('reservation', 'ReservationController@main')->name('reservation');
+
+Auth::routes();
+
+
