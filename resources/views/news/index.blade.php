@@ -44,7 +44,14 @@
                                     <!--Str::limit = 文字列を指定した数値で切り詰める(半角基準)-->
                                     <td>{{ \Str::limit($news->title, 100) }}</td>
                                     <td>{{ \Str::limit($news->body, 250) }}</td>
-                                    
+                                    <td>
+                                        <div>
+                                            <a href="{{ action('NewsController@edit', ['id' => $news->id]) }}">編集</a>
+                                        </div>
+                                        <div>
+                                            <a href="{{ action('NewsController@delete', ['id' => $news->id]) }}">削除</a>
+                                        </div>
+                                    </td>
                                 </tr>
                             @endforeach
                         </tbody>

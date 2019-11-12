@@ -18,8 +18,9 @@ Route::group(['prefix' => 'news'], function() {
     Route::get('create', 'NewsController@add');
     Route::post('create', 'NewsController@create');
     Route::get('/', 'NewsController@index');
+    Route::get('edit', 'NewsController@edit');
+    Route::post('edit', 'NewsController@update');
     Route::get('delete', 'NewsController@delete');
-    Route::get('update', 'NewsController@update');
 });
 
 Route::group(['prefix' => 'contact'], function() {

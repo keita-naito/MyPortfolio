@@ -27,7 +27,6 @@ class NewsController extends Controller
         
         // フォームから画像が送られてきたら保存して、$news->image_pathに画像のパスを保存
         // issetは引数の中にデータがあるか判断。引数がnull or falseならfalse、それ以外はtrue
-       
         if (isset($form['image'])) {
             
             // $request->fileは画像をアップロードするメソッド
@@ -75,8 +74,66 @@ class NewsController extends Controller
         }
         // ニュース検索機能
         return view('news.index', ['posts' => $posts, 'cond_title'=> $cond_title]);
+        
+    
     }
     
+    public function edit(Request $request)
+    {
+        $news = News::find($request->id);
+        if (empty($news)) {
+            abort(404);
+        }
+        return view('news.edit', ['news_form' => $news]);
+    }
+    
+    public function update(Request $request)
+    {
+        // バリデーションを行う、(モデルのNewsクラスの$rulusの配列内容を検証)
+        $this->validate($request, News::$rules);
+        
+        // Newsモデルからデータを取得する
+        $news = News::find($request->id);
+        
+        // 送信されたフォームのデータを$news_formに代入
+        $news_form = $request->all();
+        
+        // issetでデータがあるか判断
+        if (isset($news_form['image'])) {
+            
+            
+            // $request->fileは画像をアップロードするメソッド
+            // ->store()でファイルを保存するパスを指定する
+            $path = $request->file('image')->store('public/image');
+            $news->image_path = basename($path);
+            unset($news_form['image']);
+            
+            // アップデートにより画像が消された場合（画像は任意）
+        } else if (isset($request->remove)) {
+            
+            // image_pathをnullにする
+            $news->image_path = null;
+            // $news_formのremoveを消す
+            unset($news_form['remove']);
+        }
+        // _tokenの削除
+        unset($news_form['_token']);
+        
+        // fillメソッドでformの値をnewsのカラムに代入
+        $news->fill($news_form);
+        
+        // データ保存
+        $news->save();
+        
+        return redirect('news');
+    }
+    
+    public function delete(Request $request)
+    {
+        $news = News::find($request->id);
+        $news->delete();
+        return redirect('news');
+    }
 }
 
 
