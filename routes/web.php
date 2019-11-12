@@ -16,6 +16,8 @@ Route::get('/', 'HomeController@browse');
 
 Route::group(['prefix' => 'news'], function() {
     Route::get('create', 'NewsController@add');
+    Route::post('create', 'NewsController@create');
+    Route::get('/', 'NewsController@index');
     Route::get('delete', 'NewsController@delete');
     Route::get('update', 'NewsController@update');
 });
