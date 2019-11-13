@@ -1,6 +1,6 @@
 @extends('layouts.home')
 
-@section('title', '内藤美容室')
+@section('title', 'Beauty salon')
 
 @section('content')
     <img class="main-mobile-image" src="image/main_mobile_image.jpg" alt="スマホ用メイン画像">
@@ -8,6 +8,7 @@
     <div class="news-wrapper">
         <h2><a id="news">NEWS</a></h2>
         <div class="news-contents">
+            
             <div class="news-content">
                 <img src="image/news1.jpg" alt="ニュース画像">
                 <h3>NEWS TITLE</h3>
@@ -72,20 +73,38 @@
     
     <div class="menu-section">
         <h2><a id="menu">MENU</a></h2>
-        <table>
-            <tr>
-                <td>一般カット</td><td>￥4000円</td>
-            </tr>
-            <tr>
-                <td>高校生カット</td><td>￥3500円</td>
-            </tr>
-            <tr>
-                <td>カラーリング</td><td>￥3000円</td>
-            </tr>
-            <tr>
-                <td>ストレートパーマ</td><td>￥8000円</td>
-            </tr>
-        </table>
+        <div class="menu-items">
+            
+            <table class="cut-menu">
+                <tr>
+                    <td>一般カット</td><td>￥4000円</td>
+                </tr>
+                <tr>
+                    <td>高校生カット</td><td>￥3500円</td>
+                </tr>
+                <tr>
+                    <td>中学生カット</td><td>￥3000円</td>
+                </tr>
+                <tr>
+                    <td>ストレートパーマ</td><td>￥2000円</td>
+                </tr>
+            </table>
+            <table class="perma-menu">
+                
+                <tr>
+                    <td>ストレートパーマ</td><td>￥4000円</td>
+                </tr>
+                <tr>
+                    <td>ツイストパーマ</td><td>￥3500円</td>
+                </tr>
+                <tr>
+                    <td>デジタルパーマ</td><td>￥3000円</td>
+                </tr>
+                <tr>
+                    <td>ナチュラルパーマ</td><td>￥8000円</td>
+                </tr>
+            </table>
+        </div>
         <h3>組み合わせや料金の詳細についてはこちらから</h3>
         <button type="button" onclick="location.href='#'">WEBで予約する</button>
     </div>
@@ -97,7 +116,7 @@
         <div class="side-text">
             <h2>STAFF</h2>
             <h4>内藤 啓太【keita naito】</h4>
-            <p>コメント、コメント、コメント、コメント、コメント、コメント、コメント、コメント、コメント、コメント、コメント、コメント、コメント、コメント、コメント、コメント、</p>
-        </div>
+            <p>正確なカットでお手入れしやすいデザインを作ります。お客様と接する中で、1人1人に合ったスタイルをご提案させて頂きます。
+            そして、1人でも多くのお客様を笑顔にしていけたらと思っております。何か気になる点や、ご要望があれば、お気軽にお問い合わせ下さい。
     </div>
 @endsection

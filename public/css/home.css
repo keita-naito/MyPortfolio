@@ -279,8 +279,27 @@ header a {
   text-align: center;
 }
 
+.menu-section h3 {
+  padding-top: 40px;
+}
+
+.menu-items {
+  display: flex;
+  margin-bottom: 0px;
+}
+
+.cut-menu {
+  width: 50%;
+  margin: 0 4% 0;
+}
+
+.perma-menu {
+  margin: 0 4% 0;
+  width: 50%;
+}
+
 table {
-  font-size: 30px;
+  font-size: 18px;
   margin-left: 8%;
   margin-bottom: 60px;
   border-collapse: collapse;
@@ -481,6 +500,26 @@ textarea {
     height: 500px;
   }
 
+  .menu-section h3 {
+    font-size: 24px;
+  }
+
+  .menu-items {
+    flex-wrap: wrap;
+  }
+
+  .cut-menu {
+    width: 96%;
+  }
+
+  .perma-menu {
+    width: 96%;
+  }
+
+  table {
+    font-size: 24px;
+  }
+
   .icon img {
     width: 250px;
     height: 250px;
@@ -633,8 +672,8 @@ textarea {
     margin: 0;
   }
 
-  .menu-section {
-    padding: 20px;
+  .menu-section h3 {
+    font-size: 20px;
   }
 
   table {

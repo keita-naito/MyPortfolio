@@ -310,10 +310,28 @@ header {
 
 .menu-section {
     text-align: center;
+    h3 {
+        padding-top: 40px;
+    }
+}
+
+.menu-items {
+    display: flex;
+    margin-bottom: 0px;
+}
+
+.cut-menu {
+    width: 50%;
+    margin: 0 4% 0;
+}
+
+.perma-menu {
+    margin: 0 4% 0;
+    width: 50%;
 }
 
 table {
-    font-size: 30px; 
+    font-size: 18px; 
     margin-left: 8%;
     margin-bottom: 60px;
     border-collapse: collapse;
@@ -544,6 +562,29 @@ textarea{
         
     }
     
+    // メニュー
+    
+    .menu-section {
+        h3 {
+            font-size: 24px;
+        }
+    }
+    .menu-items {
+        flex-wrap: wrap;
+    }
+    
+    .cut-menu {
+        width: 96%;
+    }
+    
+    .perma-menu {
+        width: 96%;
+    }
+    
+    table {
+        font-size: 24px;
+    }
+    
     // スタッフ
     
     .icon img {
@@ -722,7 +763,9 @@ textarea{
     // メニュー
     
     .menu-section {
-        padding: 20px;   
+        h3 {
+            font-size: 20px;
+        }  
     }
     
     table {

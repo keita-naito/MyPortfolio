@@ -14,7 +14,7 @@
     <body>
         <header>
             <div class="header-logo">
-                <a href="/">内藤美容室</a>
+                <a href="/">Beauty salon</a>
             </div>
             
             <!--ドロップダウンメニュー-->

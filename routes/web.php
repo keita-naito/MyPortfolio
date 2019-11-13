@@ -23,6 +23,8 @@ Route::group(['prefix' => 'news'], function() {
     Route::get('delete', 'NewsController@delete');
 });
 
+Route::get('news/details', 'BrowseController@browse');
+
 Route::group(['prefix' => 'contact'], function() {
     Route::get('', 'ContactController@form')->name('contact');
     Route::post('confirm', 'ContactController@confirm')->name('contact.confirm');

@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\News;
+use Carbon\Carbon;
+use App\History;
 
 class NewsController extends Controller
 {
@@ -73,7 +75,7 @@ class NewsController extends Controller
             $posts = News::all();
         }
         // ニュース検索機能
-        return view('news.index', ['posts' => $posts, 'cond_title'=> $cond_title]);
+        return view('news.index', ['posts' => $posts, 'cond_title' => $cond_title]);
         
     
     }
@@ -98,32 +100,33 @@ class NewsController extends Controller
         // 送信されたフォームのデータを$news_formに代入
         $news_form = $request->all();
         
-        // issetでデータがあるか判断
-        if (isset($news_form['image'])) {
+        if ($request->remove == 'true') {
+            $news_form['image_path'] = null;
             
+        // $request->fileは画像をアップロードするメソッド
+        } else if ($request->file('image')) {
             
-            // $request->fileは画像をアップロードするメソッド
             // ->store()でファイルを保存するパスを指定する
             $path = $request->file('image')->store('public/image');
-            $news->image_path = basename($path);
-            unset($news_form['image']);
-            
-            // アップデートにより画像が消された場合（画像は任意）
-        } else if (isset($request->remove)) {
-            
-            // image_pathをnullにする
-            $news->image_path = null;
-            // $news_formのremoveを消す
-            unset($news_form['remove']);
+            $news_form['image_path'] = basename($path);
+        } else {
+            $news_form['image_path'] = $news->image_path;   
         }
-        // _tokenの削除
+            
+        unset($news_form['image']);
         unset($news_form['_token']);
-        
+        unset($news_form['remove']);
+         
         // fillメソッドでformの値をnewsのカラムに代入
         $news->fill($news_form);
         
         // データ保存
         $news->save();
+        
+        $history = new History;
+        $history->news_id = $news->id;
+        $history->edited_at = Carbon::now();
+        $history->save();
         
         return redirect('news');
     }
