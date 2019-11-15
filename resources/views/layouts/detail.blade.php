@@ -9,11 +9,13 @@
         <script src="{{ asset('js/app.js') }}" defer></script>
         <link href="{{ asset('css/normalize.css') }}" rel="stylesheet">
         <link href="{{ asset('css/home.css') }}" rel="stylesheet">
+        <link href="{{ asset('css/detail.css') }}" rel="stylesheet">
         @endif
         @if(app('env')=='production')
         <script src="{{ secure_asset('js/app.js') }}" defer></script>
         <link href="{{ secure_asset('css/normalize.css') }}" rel="stylesheet">
         <link href="{{ secure_asset('css/home.css') }}" rel="stylesheet">
+        <link href="{{ secure_asset('css/detail.css') }}" rel="stylesheet">
         @endif
         <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css">
     </head>

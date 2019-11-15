@@ -8,28 +8,17 @@
     <div class="news-wrapper">
         <h2><a id="news">NEWS</a></h2>
         <div class="news-contents">
-            
+            @foreach ($posts as $news)
             <div class="news-content">
-                <img src="image/news1.jpg" alt="ニュース画像">
-                <h3>NEWS TITLE</h3>
-                <p>2019.9.28</p>
-                <hr>
-                <p>記事の内容、記事の内容、記事の内容、記事の内容、記事の内容、記事の内容、記事の内容、記事の内容、</p>
+                <a href="{{ action('BrowseController@browse', ['id' => $news->id]) }}">
+                    <img src="{{ asset('storage/image' . $news->image_path) }}" alt="ニュース画像">
+                    <h3>{{ $news->title }}</h3>
+                    <p>{{ $news->updated_at->format('Y/m/d') }}</p>
+                    <hr>
+                    <p>{{ $news->body }}</p>
+                </a>
             </div>
-            <div class="news-content">
-                <img src="image/news2.jpg" alt="ニュース画像">
-                <h3>NEWS TITLE</h3>
-                <p>2019.9.28</p>
-                <hr>
-                <p>記事の内容、記事の内容、記事の内容、記事の内容、記事の内容、記事の内容、記事の内容、記事の内容、</p>
-            </div>
-            <div class="news-content">
-                <img src="image/news3.jpg" alt="ニュース画像">
-                <h3>NEWS TITLE</h3>
-                <p>2019.9.28</p>
-                <hr>
-                <p>記事の内容、記事の内容、記事の内容、記事の内容、記事の内容、記事の内容、記事の内容、記事の内容、</p>
-            </div>
+            @endforeach    
         </div>
     </div>
     
@@ -117,6 +106,6 @@
             <h2>STAFF</h2>
             <h4>内藤 啓太【keita naito】</h4>
             <p>正確なカットでお手入れしやすいデザインを作ります。お客様と接する中で、1人1人に合ったスタイルをご提案させて頂きます。
-            そして、1人でも多くのお客様を笑顔にしていけたらと思っております。何か気になる点や、ご要望があれば、お気軽にお問い合わせ下さい。
+            そして、1人でも多くのお客様を笑顔にしていけたらと思っております。何かになる点や、ご要望があれば、お気軽にお問い合わせ下さい。
     </div>
 @endsection

@@ -382,6 +382,13 @@ li a {
 .copy-right {
   border-top: 1px solid black;
   padding-left: 80px;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 1%;
+}
+
+.copy-right a {
+  color: #fff;
 }
 
 .reservation-page {

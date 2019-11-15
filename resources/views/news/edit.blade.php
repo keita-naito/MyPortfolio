@@ -41,10 +41,12 @@
                         </div>
                     </div>
                     <div class="form-group row">
-                        <div class="col-md-10">
+                        <div class="col-md-8 mx-auto">
                             <input type="hidden" name="id" value="{{ $news_form->id }}">
                             {{ csrf_field() }}
                             <input type="submit" class="btn btn-primary" value="更新">
+                            <a href="{{ action('NewsController@index') }}" role="button" class="btn btn-primary">一覧へ戻る</a>
+                            <a href="{{ action('HomeController@browse') }}" role="button" class="btn btn-primary">TOPへ戻る</a>
                         </div>
                     </div>
                 </form>

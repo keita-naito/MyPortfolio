@@ -11,8 +11,10 @@ class BrowseController extends Controller
     public function browse(Request $request)
     {   
         // 全てのnewsテーブルを取得して降順に並び替える
-        $posts = \DB::table('news')->get();
-         
-        return view('news.details', ['posts' => $posts]);
+        $news = News::find($request->id);
+        if (empty($news)) {
+            abort(404);
+        }
+        return view('news.details', ['news_form' => $news]);
     }
 }

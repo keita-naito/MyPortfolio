@@ -36,6 +36,7 @@
                     </div>
                     {{ csrf_field() }}
                     <input type="submit" class="btn btn-primary" value="更新">
+                    <a href="{{ action('HomeController@browse') }}" role="button" class="btn btn-primary">TOPへ戻る</a>
                 </form>
             </div>
         </div>

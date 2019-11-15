@@ -56,8 +56,12 @@
                             @endforeach
                         </tbody>
                     </table>
+                    
                 </div>
             </div>
         </div>
+        <row>
+            <a href="{{ action('HomeController@browse') }}" role="button" class="btn btn-primary">TOPへ戻る</a>
+        </row>
     </div>
 @endsection
