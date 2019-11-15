@@ -23,8 +23,8 @@
         <link href="{{ secure_asset('css/news.css') }}" rel="stylesheet">
         @endif
         @if(app('env')=='production')
-        <link href="{{ secure_asset('css/app.css') }}" rel="stylesheet">
-        <link href="{{ secure_asset('css/news.css') }}" rel="stylesheet">
+        <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+        <link href="{{ asset('css/news.css') }}" rel="stylesheet">
         @endif
     </head>
     <body>
