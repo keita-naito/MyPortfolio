@@ -18,9 +18,14 @@
         <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600" rel="stylesheet" type="text/css">
         
         <!--Styles-->
+        @if(app('env')=='local')
         <link href="{{ secure_asset('css/app.css') }}" rel="stylesheet">
-        
         <link href="{{ secure_asset('css/news.css') }}" rel="stylesheet">
+        @endif
+        @if(app('env')=='production')
+        <link href="{{ secure_asset('css/app.css') }}" rel="stylesheet">
+        <link href="{{ secure_asset('css/news.css') }}" rel="stylesheet">
+        @endif
     </head>
     <body>
         <div id="app">
