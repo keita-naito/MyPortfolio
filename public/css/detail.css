@@ -51,11 +51,6 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-main {
-  background-color: #eeeeee;
-}
-
-
 article,
 aside,
 figcaption,
@@ -10647,5 +10642,9 @@ a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6;
   }
+}
+
+main {
+  background-color: #eeeeee;
 }
 

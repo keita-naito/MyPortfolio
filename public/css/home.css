@@ -207,6 +207,7 @@ header a {
 
 .news-content {
   background-color: #fff;
+  width: calc(100% / 3);
   margin: 0 1%;
   padding: 10px;
 }
@@ -389,6 +390,8 @@ li a {
 
 .copy-right a {
   color: #fff;
+  padding: 17px 0;
+  font-size: 14px;
 }
 
 .reservation-page {
@@ -626,10 +629,6 @@ textarea {
     margin-bottom: 40px;
   }
 
-  .news-content img {
-    height: auto;
-  }
-
   .news-content p {
     margin-bottom: 30px;
   }
@@ -745,6 +744,7 @@ textarea {
 
   .copy-right {
     padding: 10px;
+    flex-wrap: wrap;
   }
 
   .reservation-page {

@@ -8,8 +8,8 @@ class HomeController extends Controller
     public function browse()
     {
         $posts = \App\News::orderBy('id', 'desc')->take(3)->get();
-        $error = array();
-        return view('top',['posts' => $posts, 'error' => $error]);
+        
+        return view('top',['posts' => $posts]);
     }
     
     public function login()

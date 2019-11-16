@@ -227,7 +227,7 @@ header {
 
 .news-content {
     background-color: #fff;
-    // width: calc(94% / 3);
+    width: calc(100% / 3);
     margin: 0 1%;
     padding: 10px;
     
@@ -427,6 +427,8 @@ li a {
     
     a {
         color: #fff;
+        padding: 17px 0;
+        font-size: 14px;
     }
 }
 
@@ -705,10 +707,6 @@ textarea{
         float: none;
         width: 100%;
         margin-bottom: 40px; 
-        
-        img {
-            height: auto;
-        }
     }
     
     
@@ -841,6 +839,7 @@ textarea{
     
     .copy-right {
         padding: 10px;
+        flex-wrap: wrap;
     }
     
     // 予約画面
