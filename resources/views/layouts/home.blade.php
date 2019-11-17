@@ -69,7 +69,7 @@
                 <div class="list-navbar outer">
                     <h5 class="nav-title">ご予約</h5>
                     <p>WEB予約</p>
-                    <button type="button" onclick="location.href='#'">WEBで予約する</button>
+                    <button type="button" onclick="location.href='reservation'">WEBで予約する</button>
                     <p>電話予約</p>
                     <a href="tel:03-1234-5678">
                     <button type="button">03-1234-5678</button>

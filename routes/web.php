@@ -14,7 +14,7 @@ Route::get('login', 'HomeController@login');
 
 Route::get('/', 'HomeController@browse');
 
-Route::group(['prefix' => 'news'], function() {
+Route::group(['prefix' => 'news', 'middleware' => 'auth'], function() {
     Route::get('create', 'NewsController@add');
     Route::post('create', 'NewsController@create');
     Route::get('/', 'NewsController@index');
@@ -24,6 +24,7 @@ Route::group(['prefix' => 'news'], function() {
 });
 
 Route::get('news/details', 'BrowseController@browse');
+Route::get('news/index', 'BrowseController@index');
 
 Route::group(['prefix' => 'contact'], function() {
     Route::get('', 'ContactController@form')->name('contact');

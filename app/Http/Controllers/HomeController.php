@@ -7,7 +7,7 @@ class HomeController extends Controller
 {
     public function browse()
     {
-        $posts = \App\News::orderBy('id', 'desc')->take(3)->get();
+        $posts = News::orderBy('id', 'desc')->take(3)->get();
         
         return view('top',['posts' => $posts]);
     }

@@ -15,7 +15,7 @@
                     <h3>{{ $news->title }}</h3>
                     <p>{{ $news->updated_at->format('Y/m/d') }}</p>
                     <hr>
-                    <p>{{ $news->body }}</p>
+                    <p>{{ Str::limit($news->body, 50) }}</p>
                 </a>
             </div>
             @endforeach    

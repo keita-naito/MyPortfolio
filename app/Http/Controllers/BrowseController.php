@@ -17,4 +17,10 @@ class BrowseController extends Controller
         }
         return view('news.details', ['news_form' => $news]);
     }
+    
+    public function index()
+    {
+        $post = News::all()->sortByDesc('id');
+        return view('news.index', ['post' => $post]);
+    }
 }
