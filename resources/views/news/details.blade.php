@@ -30,7 +30,7 @@
             </div>
             <div class="row mt-3 ml-3">
                 <a href="{{ action('HomeController@browse') }}" role="button" class="btn btn-primary">TOPへ戻る</a>
-                <a href="#" role="button" class="ml-3 btn btn-primary">NEWS一覧へ</a>
+                <a href="{{ action('BrowseController@index') }}" role="button" class="ml-3 btn btn-primary">NEWS一覧へ</a>
             </div>
         </div>
             

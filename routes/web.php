@@ -24,7 +24,7 @@ Route::group(['prefix' => 'news', 'middleware' => 'auth'], function() {
 });
 
 Route::get('news/details', 'BrowseController@browse');
-Route::get('news/index', 'BrowseController@index');
+Route::get('news/list', 'BrowseController@index');
 
 Route::group(['prefix' => 'contact'], function() {
     Route::get('', 'ContactController@form')->name('contact');

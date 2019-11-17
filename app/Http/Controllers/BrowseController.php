@@ -20,7 +20,7 @@ class BrowseController extends Controller
     
     public function index()
     {
-        $post = News::all()->sortByDesc('id');
-        return view('news.index', ['post' => $post]);
+        $posts = News::all()->sortByDesc('id');
+        return view('news.list', ['posts' => $posts]);
     }
 }

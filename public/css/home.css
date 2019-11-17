@@ -226,6 +226,10 @@ header a {
   padding: 0 40px;
 }
 
+.news-content a {
+  color: #9D8468;
+}
+
 .reservation {
   height: 700px;
   border-bottom: 1px solid #707070;
