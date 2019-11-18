@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\News;
 use Carbon\Carbon;
 use App\History;
+use Storage;
 
 class NewsController extends Controller
 {
@@ -33,10 +34,10 @@ class NewsController extends Controller
             
             // $request->fileは画像をアップロードするメソッド
             // ->store()でファイルを保存するパスを指定する
-            $path = $request->file('image')->store('public/image');
+            $path = Storage::disk('s3')->putFile('/',$form['image'],'public');
             
             // basenameでハッシュ化されてるファイル名だけを取得、newsテーブルのimage_pathに代入
-            $news->image_path = basename($path);
+            $news->image_path = Storage::disk('s3')->url($path);
             
         } else {
             

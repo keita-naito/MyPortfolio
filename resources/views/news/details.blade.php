@@ -8,7 +8,7 @@
                 
                 <div class="row">
                         <div class="image col-md-8 mx-auto">
-                            <img class="img-fluid" src="{{ asset('storage/image/' . $news_form->image_path) }}">
+                            <img class="img-fluid" src="{{ $news_form->image_path }}">
                         </div>
                 </div>
                 <div class="row">

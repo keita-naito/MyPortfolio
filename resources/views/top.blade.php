@@ -11,7 +11,7 @@
             @foreach ($posts as $news)
             <div class="news-content">
                 <a href="{{ action('BrowseController@browse', ['id' => $news->id]) }}">
-                    <img src="{{ asset('storage/image/' . $news->image_path) }}" alt="ニュース画像">
+                    <img src="{{ $news->image_path }}" alt="ニュース画像">
                     <h3>{{ $news->title }}</h3>
                     <p>{{ $news->updated_at->format('Y/m/d') }}</p>
                     <hr>

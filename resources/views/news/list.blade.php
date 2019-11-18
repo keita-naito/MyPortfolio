@@ -21,7 +21,7 @@
                             </div>
                         </div>
                         <div class="col-md-6 text-right mt-4">
-                            <img src="{{ asset('storage/image/' . $news->image_path) }}" style="width:100%; height:230px;" >
+                            <img src="{{ $news->image_path }}" style="width:100%; height:230px;" >
                         </div>
                     </div>
                 </a>
