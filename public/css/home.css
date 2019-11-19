@@ -480,6 +480,10 @@ textarea {
   margin-left: 60px;
 }
 
+.img-fluid {
+  width: 100%;
+}
+
 .finish {
   font-size: 20px;
   height: 150px;

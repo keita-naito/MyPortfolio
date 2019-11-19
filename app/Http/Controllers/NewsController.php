@@ -32,11 +32,7 @@ class NewsController extends Controller
         // issetは引数の中にデータがあるか判断。引数がnull or falseならfalse、それ以外はtrue
         if (isset($form['image'])) {
             
-            // $request->fileは画像をアップロードするメソッド
-            // ->store()でファイルを保存するパスを指定する
             $path = Storage::disk('s3')->putFile('/',$form['image'],'public');
-            
-            // basenameでハッシュ化されてるファイル名だけを取得、newsテーブルのimage_pathに代入
             $news->image_path = Storage::disk('s3')->url($path);
             
         } else {
@@ -106,10 +102,8 @@ class NewsController extends Controller
             
         // $request->fileは画像をアップロードするメソッド
         } else if ($request->file('image')) {
-            
-            // ->store()でファイルを保存するパスを指定する
-            $path = $request->file('image')->store('public/image');
-            $news_form['image_path'] = basename($path);
+            $path = Storage::disk('s3')->putFile('/',$news_form['image'],'public');
+            $news->image_path = Storage::disk('s3')->url($path);
         } else {
             $news_form['image_path'] = $news->image_path;   
         }
